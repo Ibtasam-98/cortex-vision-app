@@ -7,11 +7,11 @@ import 'package:get/get.dart';
 
 import '../../../config/colors.dart';
 
-class RemoveImageButton extends StatelessWidget {
+class CustomAnimatedButton extends StatelessWidget {
   final ButtonState state;
   final VoidCallback onPressed;
 
-  const RemoveImageButton({
+  const CustomAnimatedButton({
     required this.state,
     required this.onPressed,
   });

@@ -4,7 +4,7 @@ import 'package:google_fonts/google_fonts.dart';
 
 import '../../config/colors.dart';
 import '../../config/sizedbox.dart';
-import '../widgets/text/customText.dart';
+import '../widgets/customText.dart';
 
 
 
@@ -31,19 +31,19 @@ class OnboardingPage extends StatelessWidget {
             textColor: whiteColor,
             fontSize: 22.sp,
             title: title,
-            maxline: 2,
-            text0verFlow: TextOverflow.ellipsis,
+            maxLines: 2,
+            textOverflow: TextOverflow.ellipsis,
             textAlign: TextAlign.start,
             fontWeight: FontWeight.w600,
-            textStyle: GoogleFonts.montserrat,
+            textStyle: GoogleFonts.montserrat(),
           ),
           space5h,
           CustomText(
             textColor: whiteColor,
             fontSize: 16.sp,
             title: description,
-            maxline: 10,
-            text0verFlow: TextOverflow.ellipsis,
+            maxLines: 10,
+            textOverflow: TextOverflow.ellipsis,
             textAlign: TextAlign.start,
           ),
         ],

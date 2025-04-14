@@ -4,11 +4,9 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../config/colors.dart';
 import '../../config/sizedbox.dart';
-import '../../controllers/user/userRegisterationController.dart';
-import '../widgets/buttons/customBackButton.dart';
+import '../controllers/userRegisterationController.dart';
 import '../widgets/buttons/customButton.dart';
-import '../widgets/text/customText.dart';
-import '../widgets/text/dualToneText.dart';
+import '../widgets/customText.dart';
 import '../widgets/textfields/customTextFields.dart';
 import 'loginScreen.dart';
 
@@ -42,17 +40,14 @@ class RegistrationScreen extends StatelessWidget {
               onTap: () {
                 Get.to(LoginScreen());
               },
-              child: DualToneText(
+              child: CustomText(
                 firstText: "Already have an Account? ",
                 secondText: "Login here",
-                firstTextStyle: GoogleFonts.montserrat,
-                secondTextStyle: GoogleFonts.montserrat,
                 firstTextColor: blackColor,
                 secondTextColor: primaryColor,
                 firstTextFontWeight: FontWeight.w500,
                 secondTextFontWeight: FontWeight.bold,
-                firstTextFontSize: 15.sp,
-                secondTextFontSize: 15.sp,
+                fontSize: 15.sp,
               ),
             ),
           ),
@@ -60,7 +55,12 @@ class RegistrationScreen extends StatelessWidget {
             top: 50,
             left: 15,
             right: 10,
-            child: CustomBackButton(),
+            child: CustomButton(
+              isBackButton: true,
+              onTap: () {
+                Navigator.pop(context);
+              },
+            ),
           ),
         ],
       ),
@@ -75,24 +75,21 @@ class RegistrationScreen extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           space15h,
-          DualToneText(
+          CustomText(
             firstText: "Cortex",
             secondText: " Vision",
-            firstTextStyle: GoogleFonts.montserrat,
-            secondTextStyle: GoogleFonts.montserrat,
             firstTextColor: primaryColor,
             secondTextColor: blackColor,
             firstTextFontWeight: FontWeight.bold,
             secondTextFontWeight: FontWeight.w500,
-            firstTextFontSize: 22.sp,
-            secondTextFontSize: 22.sp,
+            fontSize: 22.sp,
           ),
           CustomText(
             textColor: blackColor,
             fontSize: 17.sp,
             title: "Registration",
-            maxline: 2,
-            text0verFlow: TextOverflow.ellipsis,
+            maxLines: 2,
+            textOverflow: TextOverflow.ellipsis,
             textAlign: TextAlign.start,
           ),
           space5h,
@@ -100,10 +97,10 @@ class RegistrationScreen extends StatelessWidget {
             textColor: blackColor,
             fontSize: 14.sp,
             title: "Welcome Please enter your information to create an account",
-            maxline: 2,
-            text0verFlow: TextOverflow.ellipsis,
+            maxLines: 2,
+            textOverflow: TextOverflow.ellipsis,
             textAlign: TextAlign.start,
-            textStyle: GoogleFonts.montserrat,
+            textStyle: GoogleFonts.montserrat(),
           ),
           space10h,
           CustomTextField(
@@ -149,8 +146,8 @@ class RegistrationScreen extends StatelessWidget {
               textColor: blackColor,
               fontSize: 15.sp,
               title: 'Select Gender',
-              maxline: 1,
-              text0verFlow: TextOverflow.ellipsis,
+              maxLines: 1,
+              textOverflow: TextOverflow.ellipsis,
             ),
             items: _controller.genderList.where((value) => value != null).map((value) {
               return DropdownMenuItem<String>(
@@ -158,9 +155,9 @@ class RegistrationScreen extends StatelessWidget {
                 child: CustomText(
                   textColor: blackColor,
                   fontSize: 15.sp,
-                  maxline: 1,
+                  maxLines: 1,
                   title: value,
-                  text0verFlow: TextOverflow.ellipsis,
+                  textOverflow: TextOverflow.ellipsis,
                 ),
               );
             }).toList(),

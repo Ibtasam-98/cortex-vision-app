@@ -5,11 +5,10 @@ import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../../config/colors.dart';
 import '../../config/sizedbox.dart';
-import '../../controllers/user/welcomeScreenController.dart';
+import '../controllers/welcomeScreenController.dart';
 import '../home/cataract_prediction_screen.dart';
 import '../widgets/buttons/customButton.dart';
-import '../widgets/glassMorphismEffect.dart';
-import '../widgets/text/customText.dart';
+import '../widgets/customText.dart';
 import 'authentication.dart';
 import 'onboarding.dart';
 
@@ -54,25 +53,19 @@ class WelcomeScreen extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Align(
-                      alignment: Alignment.bottomRight,
-                      child: GlassMorphism(
-                        heading: "24/7",
-                        subHeading: "Support",
-                        headingColor: whiteColor,
-                        subHeadingColor: whiteColor.withOpacity(0.6),
-                        headingFontSize: 18.sp,
-                        subHeadingFontSize: 15.sp,
+                      alignment: Alignment.bottomLeft,
+                      child: CustomText(
+                        title: "27\nSupport",
+                        textColor: whiteColor.withOpacity(0.6),
+                        fontSize: 14.sp,
                       ),
                     ),
                     Align(
                       alignment: Alignment.bottomLeft,
-                      child: GlassMorphism(
-                        heading: "104",
-                        subHeading: "Happy\nPatients",
-                        headingColor: whiteColor,
-                        subHeadingColor: whiteColor.withOpacity(0.6),
-                        headingFontSize: 18.sp,
-                        subHeadingFontSize: 13.sp,
+                      child: CustomText(
+                        title: "104\nHappy\nPatients",
+                        textColor: whiteColor.withOpacity(0.6),
+                        fontSize: 14.sp,
                       ),
                     ),
                     Column(
