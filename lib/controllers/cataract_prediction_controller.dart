@@ -96,7 +96,7 @@ class CataractPredictionController extends GetxController {
       return;
     }
 
-    final uri = Uri.parse('http://127.0.0.1:5000/predict');
+    final uri = Uri.parse('http://127.0.0.1:5002/predict');
     var request = http.MultipartRequest('POST', uri);
     request.files.add(await http.MultipartFile.fromPath('image', imageFile.value!.path));
 
@@ -150,7 +150,7 @@ class CataractPredictionController extends GetxController {
           isDetecting.value = false;
           detectionResult.value = 'Error: Invalid response format';
         }
-        print(response.body);
+
       } else {
         isDetecting.value = false;
         detectionResult.value = 'Error: ${detectionResponseData?['error'] ?? 'Something went wrong'}';

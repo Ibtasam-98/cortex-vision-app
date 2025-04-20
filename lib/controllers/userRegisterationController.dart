@@ -135,3 +135,5 @@ class RegistrationController extends GetxController {
     super.dispose();
   }
 }
+
+
