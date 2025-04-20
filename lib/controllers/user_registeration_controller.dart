@@ -3,7 +3,7 @@ import 'package:get/get.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
-import '../../authentications/loginScreen.dart';
+import '../../authentications/login_screen.dart';
 
 class RegistrationController extends GetxController {
   final FirebaseAuth _auth = FirebaseAuth.instance;

@@ -3,12 +3,12 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
-import '../../config/colors.dart';
-import '../../config/sizedbox.dart';
-import '../controllers/welcomeScreenController.dart';
+import '../../config/app_colors.dart';
+import '../../config/app_sizedbox.dart';
+import '../controllers/welcome_screen_controller.dart';
 import '../home/cataract_prediction_screen.dart';
-import '../widgets/buttons/customButton.dart';
-import '../widgets/customText.dart';
+import '../widgets/custom_button.dart';
+import '../widgets/custom_text.dart';
 import 'authentication.dart';
 import 'onboarding.dart';
 
@@ -153,48 +153,3 @@ class WelcomeScreen extends StatelessWidget {
     );
   }
 }
-
-/*
-* Expanded(
-                      child: Stack(
-                        children: [
-                          Align(
-                            alignment: Alignment.bottomLeft,
-                            child: PageView(
-                              controller: welcomeController.pageController,
-                              onPageChanged: (int page) {
-                                welcomeController.currentPage.value = page;
-                              },
-                              children: [
-                                OnboardingPage(
-                                  title: 'Cataract Detection',
-                                  description:
-                                  'Explore the future of eye care with our cutting-edge AI technology, designed to safeguard your vision',
-                                ),
-                                OnboardingPage(
-                                  title: 'Early Detection',
-                                  description:
-                                  'Detect cataracts early for clearer vision and proactive eye health management, ensuring optimal clarity and comfort',
-                                ),
-                                OnboardingPage(
-                                  title: 'Eye Wellness',
-                                  description:
-                                  'Experience personalized eye wellness solutions tailored to your unique needs, backed by state-of-the-art artificial intelligence for comprehensive care.',
-                                ),
-                              ],
-                            ),
-                          ),
-                          Align(
-                            alignment: Alignment.bottomCenter,
-                            child: Obx(() => Row(
-                              mainAxisAlignment: MainAxisAlignment.start,
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: List.generate(
-                                3,
-                                    (index) => buildIndicator(index),
-                              ),
-                            )),
-                          ),
-                        ],
-                      ),
-                    ),*/

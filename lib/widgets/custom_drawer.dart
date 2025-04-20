@@ -1,12 +1,12 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:cortex_vision_app/widgets/customText.dart';
+import 'package:cortex_vision_app/widgets/custom_text.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
-import '../../config/colors.dart';
-import '../../config/sizedbox.dart';
+import '../../config/app_colors.dart';
+import '../../config/app_sizedbox.dart';
 class CustomDrawer extends StatelessWidget {
   final bool isAdmin;
 

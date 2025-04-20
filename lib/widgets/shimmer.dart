@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:shimmer/shimmer.dart';
 
-import '../../config/colors.dart';
+import '../../config/app_colors.dart';
 
 
 Widget buildShimmerList() {
@@ -94,14 +94,14 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:intl/intl.dart';
 import 'package:shimmer/shimmer.dart';
 
-import '../../../config/colors.dart';
-import '../../../config/sizedbox.dart';
-import '../../../controllers/user/UserHomeController.dart';
-import '../../widgets/customDrawer.dart';
+import '../../../config/app_colors.dart';
+import '../../../config/app_sizedbox.dart';
+import '../../../controllers/user/user_home_controller.dart';
+import '../../widgets/custom_drawer.dart';
 import '../../widgets/shimmer.dart';
-import '../../widgets/text/customText.dart';
+import '../../widgets/text/custom_text.dart';
 import '../../widgets/text/dualToneText.dart';
-import '../../widgets/textfields/customTextFields.dart';
+import '../../widgets/textfields/custom_text_field.dart';
 import 'doctor/doctorProfileForUser.dart';
 import 'doctorSearchScreen.dart'; // Import the CustomDrawer widget
 
@@ -252,7 +252,7 @@ class _UserHomeScreenState extends State<UserHomeScreen> {
                        child: ClipRRect(
                          borderRadius: BorderRadius.circular(10.0), // Adjust border radius as needed
                          child: Image.asset(
-                           'assets/doctorAppointmentBg.jpg',
+                           'assets/doctor_appointment_bg.jpg',
                            width: double.infinity, // Adjust width as needed
                            fit: BoxFit.cover, // Adjust image fit as needed
                          ),

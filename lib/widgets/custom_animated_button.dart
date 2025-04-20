@@ -5,7 +5,7 @@ import 'package:progress_state_button/iconed_button.dart';
 import 'package:progress_state_button/progress_button.dart';
 import 'package:get/get.dart';
 
-import '../../../config/colors.dart';
+import '../../config/app_colors.dart';
 
 class CustomAnimatedButton extends StatelessWidget {
   final ButtonState state;

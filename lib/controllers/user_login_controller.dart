@@ -2,7 +2,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '../authentications/registerationScreen.dart';
+import '../authentications/registeration_screen.dart';
 import '../home/cataract_prediction_screen.dart'; // Assuming this is your home screen
 
 class LoginController extends GetxController {

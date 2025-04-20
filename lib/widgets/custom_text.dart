@@ -4,7 +4,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:glassmorphism_ui/glassmorphism_ui.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../config/colors.dart';
+import '../config/app_colors.dart';
 
 class CustomText extends StatelessWidget {
   const CustomText({

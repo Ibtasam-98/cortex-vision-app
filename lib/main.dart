@@ -1,5 +1,5 @@
-import 'package:cortex_vision_app/authentications/welcomeScreen.dart';
-import 'package:cortex_vision_app/controllers/UserHomeController.dart';
+import 'package:cortex_vision_app/authentications/welcome_screen.dart';
+import 'package:cortex_vision_app/controllers/user_home_controller.dart';
 import 'package:cortex_vision_app/home/cataract_prediction_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';

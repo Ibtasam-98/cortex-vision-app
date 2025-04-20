@@ -9,13 +9,13 @@ import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:loading_indicator/loading_indicator.dart';
 
-import '../../../widgets/buttons/customAnimatedButton.dart';
-import '../../../widgets/buttons/customButton.dart';
-import '../controllers/UserHomeController.dart';
+import '../widgets/custom_animated_button.dart';
+import '../widgets/custom_button.dart';
+import '../controllers/user_home_controller.dart';
 import '../controllers/cataract_prediction_controller.dart';
-import '../widgets/customText.dart';
-import '../config/colors.dart';
-import '../config/sizedbox.dart';
+import '../widgets/custom_text.dart';
+import '../config/app_colors.dart';
+import '../config/app_sizedbox.dart';
 
 class CataractPredictionScreen extends StatelessWidget {
   final UserHomeController userHomeController = Get.find<UserHomeController>();

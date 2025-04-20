@@ -1,15 +1,14 @@
-import 'package:cortex_vision_app/authentications/registerationScreen.dart';
+import 'package:cortex_vision_app/authentications/registeration_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
-import '../../config/colors.dart';
-import '../../config/sizedbox.dart';
-import '../controllers/userLoginController.dart';
-import '../widgets/buttons/customButton.dart';
-import '../widgets/customText.dart';
-import '../widgets/textfields/customTextFields.dart';
-// import 'forgotPasswordScreen.dart'; // Uncomment when you have this screen
+import '../../config/app_colors.dart';
+import '../../config/app_sizedbox.dart';
+import '../controllers/user_login_controller.dart';
+import '../widgets/custom_button.dart';
+import '../widgets/custom_text.dart';
+import '../widgets/custom_text_field.dart';
 
 class LoginScreen extends StatelessWidget {
   final _formKey = GlobalKey<FormState>();

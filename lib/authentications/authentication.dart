@@ -2,7 +2,7 @@ import 'package:cortex_vision_app/home/cataract_prediction_screen.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
-import 'loginScreen.dart';
+import 'login_screen.dart';
 
 
 class AuthPage extends StatelessWidget {
@@ -18,7 +18,6 @@ class AuthPage extends StatelessWidget {
             return Center(child: CircularProgressIndicator());
           } else {
             if (snapshot.hasData) {
-              // Check if the user is an admin or a normal user
               return _checkUserRole(snapshot.data!);
             } else {
               return LoginScreen();

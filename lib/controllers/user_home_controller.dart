@@ -1,7 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:get/get.dart';
 
-import '../authentications/loginScreen.dart';
+import '../authentications/login_screen.dart';
 
 class UserHomeController extends GetxController {
   final User? user; // Made user optional

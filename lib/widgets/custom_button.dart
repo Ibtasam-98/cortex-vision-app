@@ -3,10 +3,10 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import '../../../config/colors.dart';
-import '../../../config/sizedbox.dart';
-import '../../authentications/welcomeScreen.dart';
-import '../customText.dart';
+import '../../config/app_colors.dart';
+import '../../config/app_sizedbox.dart';
+import '../authentications/welcome_screen.dart';
+import 'custom_text.dart';
 
 class CustomButton extends StatelessWidget {
   final String? btnTitle;

@@ -2,13 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import '../../config/colors.dart';
-import '../../config/sizedbox.dart';
-import '../controllers/userRegisterationController.dart';
-import '../widgets/buttons/customButton.dart';
-import '../widgets/customText.dart';
-import '../widgets/textfields/customTextFields.dart';
-import 'loginScreen.dart';
+import '../../config/app_colors.dart';
+import '../../config/app_sizedbox.dart';
+import '../controllers/user_registeration_controller.dart';
+import '../widgets/custom_button.dart';
+import '../widgets/custom_text.dart';
+import '../widgets/custom_text_field.dart';
+import 'login_screen.dart';
 
 class RegistrationScreen extends StatelessWidget {
   final RegistrationController _controller = Get.put(RegistrationController());
