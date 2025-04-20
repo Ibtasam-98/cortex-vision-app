@@ -1,3 +1,4 @@
+import 'package:cortex_vision_app/authentications/welcomeScreen.dart';
 import 'package:cortex_vision_app/controllers/UserHomeController.dart';
 import 'package:cortex_vision_app/home/cataract_prediction_screen.dart';
 import 'package:flutter/material.dart';
@@ -31,8 +32,7 @@ class MyApp extends StatelessWidget {
           home: child,
         );
       },
-      // child: WelcomeScreen(),
-      child: CataractPredictionScreen(),
+      child: WelcomeScreen(),
     );
   }
 }
