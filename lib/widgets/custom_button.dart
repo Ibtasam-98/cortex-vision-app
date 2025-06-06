@@ -50,6 +50,7 @@ class CustomButton extends StatelessWidget {
           }
               : null),
       child: Container(
+        width: Get.width- 30,
         decoration: BoxDecoration(
           color: haveBgColor ? bgColor : null,
           gradient: useGradient && gradient != null ? gradient : null,

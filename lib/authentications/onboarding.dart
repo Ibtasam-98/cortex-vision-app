@@ -7,7 +7,6 @@ import '../../config/app_sizedbox.dart';
 import '../widgets/custom_text.dart';
 
 
-
 class OnboardingPage extends StatelessWidget {
   final String title;
   final String description;
@@ -21,7 +20,7 @@ class OnboardingPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.only(left:15.w,right: 15.w, top: 35.h),
+      padding: EdgeInsets.only(top: 35.h),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.start,

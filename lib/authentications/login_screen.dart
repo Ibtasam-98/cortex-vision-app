@@ -46,7 +46,7 @@ class LoginScreen extends StatelessWidget {
                   ),
                   CustomText(
                     textColor: blackColor,
-                    fontSize: 21.sp,
+                    fontSize: 18.sp,
                     title: "Login",
                     maxLines: 2,
                     textOverflow: TextOverflow.ellipsis,
@@ -55,7 +55,7 @@ class LoginScreen extends StatelessWidget {
                   space10h,
                   CustomText(
                     textColor: blackColor,
-                    fontSize: 15.sp,
+                    fontSize: 14.sp,
                     title: "Welcome Back Please enter your credentials to login",
                     maxLines: 2,
                     textOverflow: TextOverflow.ellipsis,
@@ -66,7 +66,7 @@ class LoginScreen extends StatelessWidget {
                     label: 'Email',
                     isPassword: false,
                     icon: Icons.email,
-                    placeholder: 'Enter your Email Address',
+                    placeholder: 'Email Address',
                     textEditingController: _controller.emailController,
                     validator: _controller.validateEmail,
                     onSaved: (value) {},
@@ -75,7 +75,7 @@ class LoginScreen extends StatelessWidget {
                     label: 'Password',
                     isPassword: true,
                     icon: Icons.lock,
-                    placeholder: 'Enter your Password',
+                    placeholder: 'Password',
                     textEditingController: _controller.passwordController,
                     validator: _controller.validatePassword,
                     onSaved: (value) {},
@@ -87,7 +87,7 @@ class LoginScreen extends StatelessWidget {
                       alignment: Alignment.bottomRight,
                       child: CustomText(
                         textColor: primaryColor,
-                        fontSize: 14.sp,
+                        fontSize: 12.sp,
                         title: "Forgot Password ?",
                         maxLines: 2,
                         textOverflow: TextOverflow.ellipsis,
@@ -139,26 +139,17 @@ class LoginScreen extends StatelessWidget {
             right: 10,
             child: InkWell(
               onTap: _controller.goToRegistration,
-              child: CustomText(
-                firstText: "Don't have an Account ? ",
-                secondText: "Register here",
-                firstTextColor: blackColor,
-                secondTextColor: primaryColor,
-                firstTextFontWeight: FontWeight.w500,
-                secondTextFontWeight: FontWeight.bold,
-                fontSize: 18.sp,
+              child: Center(
+                child: CustomText(
+                  firstText: "Don't have an Account ? ",
+                  secondText: "Register here",
+                  firstTextColor: blackColor,
+                  secondTextColor: primaryColor,
+                  firstTextFontWeight: FontWeight.w500,
+                  secondTextFontWeight: FontWeight.bold,
+                  fontSize: 14.sp,
+                ),
               ),
-            ),
-          ),
-          Positioned(
-            top: 50,
-            left: 15,
-            right: 10,
-            child: CustomButton(
-              isBackButton: true,
-              onTap: () {
-                Navigator.pop(context);
-              },
             ),
           ),
         ],
@@ -166,3 +157,4 @@ class LoginScreen extends StatelessWidget {
     );
   }
 }
+

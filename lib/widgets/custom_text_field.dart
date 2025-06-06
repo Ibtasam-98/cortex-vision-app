@@ -58,7 +58,7 @@ class _CustomTextFieldState extends State<CustomTextField> {
             fillColor: lightgray,
             filled: true,
             hintText: widget.placeholder, // Set the placeholder
-            hintStyle: GoogleFonts.quicksand(fontSize: 12.h, color: Colors.black),
+            hintStyle: GoogleFonts.quicksand(fontSize: 10.h, color: Colors.black),
           ),
           validator: widget.validator,
           onSaved: widget.onSaved,

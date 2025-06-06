@@ -40,26 +40,17 @@ class RegistrationScreen extends StatelessWidget {
               onTap: () {
                 Get.to(LoginScreen());
               },
-              child: CustomText(
-                firstText: "Already have an Account? ",
-                secondText: "Login here",
-                firstTextColor: blackColor,
-                secondTextColor: primaryColor,
-                firstTextFontWeight: FontWeight.w500,
-                secondTextFontWeight: FontWeight.bold,
-                fontSize: 15.sp,
+              child: Center(
+                child: CustomText(
+                  firstText: "Already have an Account? ",
+                  secondText: "Login here",
+                  firstTextColor: blackColor,
+                  secondTextColor: primaryColor,
+                  firstTextFontWeight: FontWeight.w500,
+                  secondTextFontWeight: FontWeight.bold,
+                  fontSize: 14.sp,
+                ),
               ),
-            ),
-          ),
-          Positioned(
-            top: 50,
-            left: 15,
-            right: 10,
-            child: CustomButton(
-              isBackButton: true,
-              onTap: () {
-                Navigator.pop(context);
-              },
             ),
           ),
         ],
@@ -110,7 +101,7 @@ class RegistrationScreen extends StatelessWidget {
             textEditingController: _controller.usernameController,
             validator: _controller.validateUsername,
             onSaved: _controller.saveUsername,
-            placeholder: 'Enter your Username',
+            placeholder: 'Username',
           ),
           CustomTextField(
             label: 'Email',
@@ -119,13 +110,13 @@ class RegistrationScreen extends StatelessWidget {
             textEditingController: _controller.emailController,
             validator: _controller.validateEmail,
             onSaved: _controller.saveEmail,
-            placeholder: 'Enter your Email Address',
+            placeholder: 'Email Address',
           ),
           CustomTextField(
             label: 'Password',
             isPassword: true,
             icon: Icons.lock,
-            placeholder: 'Enter your Password',
+            placeholder: 'Password',
             textEditingController: _controller.passwordController,
             validator: _controller.validatePassword,
             onSaved: _controller.savePassword,
@@ -133,7 +124,7 @@ class RegistrationScreen extends StatelessWidget {
           CustomTextField(
             label: 'Contact Number',
             isPassword: false,
-            placeholder: 'Enter your Contact Number',
+            placeholder: 'Contact Number',
             icon: Icons.phone,
             textEditingController: _controller.contactNumberController,
             validator: _controller.validateContactNumber,
